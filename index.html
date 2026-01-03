@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>NovaBuild – Generálkivitelezés</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="pic/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <img src="pic/logo.png" alt="NovaBuild logó" class="loader-logo-img">
+    <div class="loader-text"><h2>NOVABUILD</h2></div>
+  </div>
+</div>
+
+
+<!-- COOKIE BANNER -->
+<div class="cookie-overlay" id="cookieOverlay">
+  <div class="cookie-box">
+    <h3>🍪 Cookie tájékoztató</h3>
+    <p>
+      Ez a weboldal cookie-kat használ a megfelelő működés,
+      statisztikai elemzés és felhasználói élmény javítása érdekében.
+      A weboldal használatával elfogadod a
+      <a href="cookie.html">Cookie szabályzatot</a>.
+    </p>
+    <div class="cookie-buttons">
+      <button class="cookie-decline" id="declineCookies">Elutasítom</button>
+      <button class="cookie-accept" id="acceptCookies">Elfogadom</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="brand">
+    <img src="pic/logo.png" alt="NovaBuild logó">
+    <span class="navlog">NovaBuild</span>
+  </div>
+
+  <nav id="navMenu">
+    <a href="#home">Kezdőlap</a>
+    <a href="#services">Szolgáltatások</a>
+    <a href="#about">Rólunk</a>
+    <a href="#projects">Referenciák</a>
+    <a href="#contact">Kapcsolat</a>
+  </nav>
+
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-box">
+    <h1>Teljes körű generálkivitelezés</h1>
+    <p>Tervezéstől a kulcsátadásig egy kézben</p>
+    <a href="#contact" class="btn">Lépj kapcsolatba velünk</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Szolgáltatásaink</h2>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <i class="fa-solid fa-house"></i>
+      <h3>Családi ház építés</h3>
+      <p>Teljes kivitelezés az alapozástól a kulcsátadásig.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Felújítás</h3>
+      <p>Lakások és házak modernizálása, átalakítása.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-helmet-safety"></i>
+      <h3>Tetőszerkezet</h3>
+      <p>Tetőépítés, felújítás, szigetelés.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-brush"></i>
+      <h3>Belső munkák</h3>
+      <p>Burkolás, festés, gipszkartonozás.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt about">
+  <div class="about-text">
+    <h2>Rólunk</h2>
+    <p>
+      Több mint 20 éves szakmai tapasztalattal vállaljuk
+      családi házak és ingatlanok teljes körű kivitelezését.
+    </p>
+    <p>
+      Munkánk során kiemelten fontos számunkra a minőség,
+      az átláthatóság és a határidők betartása.
+    </p>
+    <a href="#contact" class="btn small">Kapcsolat</a>
+  </div>
+
+  <img
+    src="pic/house8.avif"
+    alt="Csapat"
+    class="about-img">
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Referenciák</h2>
+
+<div class="carousel">
+  <div class="carousel-track" id="carouselTrack">
+    <img src="pic/house1.avif" draggable="false">
+    <img src="pic/house2.avif" draggable="false">
+    <img src="pic/house5.avif" draggable="false">
+    <img src="pic/house3.avif" draggable="false">
+    <img src="pic/house4.avif" draggable="false">
+    <img src="pic/house6.avif" draggable="false">
+    <img src="pic/house7.avif" draggable="false">
+
+    <!-- DUPLIKÁLVA A VÉGTELENHEZ -->
+    <img src="pic/house1.avif" draggable="false">
+    <img src="pic/house2.avif" draggable="false">
+    <img src="pic/house5.avif" draggable="false">
+    <img src="pic/house3.avif" draggable="false">
+    <img src="pic/house4.avif" draggable="false">
+    <img src="pic/house6.avif" draggable="false">
+    <img src="pic/house7.avif" draggable="false">
+  </div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt contact-section">
+
+  <h2 class="contact-title">Kapcsolat</h2>
+
+  <div class="contact">
+    <div class="contact-info">
+      <a href="tel:+36123456789" class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+36 12 345 6789</span>
+      </a>
+
+      <a href="mailto:info@peldaepito.hu" class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>info@peldaepito.hu</span>
+      </a>
+    </div>
+
+    <form action="https://formsubmit.co/youremail@example.com" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Név" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Üzenet" required></textarea>
+      <button type="submit">Üzenet küldése</button>
+    </form>
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 NovaBuild – Generálkivitelezés
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
