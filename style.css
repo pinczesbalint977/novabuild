@@ -590,3 +590,47 @@ button:active,
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0,0,0,.15);
 }
+
+
+
+
+/* THANK YOU PAGE */
+.thankyou-wrapper{
+  min-height: calc(100vh - 6rem);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.thankyou-card{
+  background:white;
+  padding:3rem 2.5rem;
+  border-radius:20px;
+  text-align:center;
+  max-width:420px;
+  width:100%;
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+  animation:fadeUp 1s ease;
+}
+
+.thankyou-logo{
+  width:70px;
+  margin-bottom:1.2rem;
+}
+
+.thankyou-card h1{
+  color:var(--main);
+  margin-bottom:.8rem;
+}
+
+.thankyou-card p{
+  margin-bottom:2rem;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .thankyou-card{
+    padding:2.2rem 1.6rem;
+    margin:0 1rem;
+  }
+}
